@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CoreComponent } from 'projects/core/src/public-api';
+import { CardComponent } from 'projects/core/src/lib/card/card.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CoreComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

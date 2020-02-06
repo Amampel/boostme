@@ -24,6 +24,12 @@
       ],
       "core/*": [
         "dist/core/*"
+      ],
+      "button": [
+        "dist/button"
+      ],
+      "button/*": [
+        "dist/button/*"
       ]
     }
   },

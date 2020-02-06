@@ -1,16 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, } from '@angular/core';
 
 @Component({
   selector: 'lib-core',
   template: `
-    <p>
-      core works!
-    </p>
+  <button [disabled]="disabled">{{text}}</button>
   `,
   styles: []
 })
 export class CoreComponent implements OnInit {
-
+  @Input() text: string;
+  @Input() disabled: boolean;
   constructor() { }
 
   ngOnInit() {
