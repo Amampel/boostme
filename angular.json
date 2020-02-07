@@ -24,6 +24,7 @@
               "projects/boostme/src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "projects/boostme/src/styles.css"
             ],
             "scripts": []
