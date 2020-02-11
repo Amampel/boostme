@@ -32,7 +32,7 @@ storiesOf('Core-Button', module)
   .add('button enabled', () => ({
     component: CardComponent,
     props: {
-      name: 'Mampel',
-      myEvent: action('Hello Mampel')
+      name: 'Name',
+      myEvent: action('Name printed')
     }
   }))

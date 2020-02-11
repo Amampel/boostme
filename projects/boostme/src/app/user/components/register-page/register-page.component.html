@@ -1,19 +1,19 @@
 
-<h1>Register User</h1>
+<h1 class="display-4">Register User</h1>
+<br>
 <form [formGroup]="profileForm" (ngSubmit)="onSubmit()"> 
   
     <label>
-      First Name:
-      <input type="text" formControlName="firstName">
+      Username:
+      <input type="text" formControlName="username" class="form-control">
     </label>
-  
     <label>
-      Last Name:
-      <input type="text" formControlName="lastName">
+      Password:
+      <input type="password" formControlName="password" class="form-control">
     </label>
-
+<br>
     <label>
-        <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+        <button type="submit" [disabled]="!profileForm.valid" class="btn btn-outline-primary">Submit</button>
     </label>
   
   </form>

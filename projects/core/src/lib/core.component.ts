@@ -3,7 +3,7 @@ import { Component, OnInit, Input, } from '@angular/core';
 @Component({
   selector: 'lib-core',
   template: `
-  <button [disabled]="disabled">{{text}}</button>
+  <button [disabled]="disabled" class="btn btn-outline-primary">{{text}}</button>
   `,
   styles: []
 })

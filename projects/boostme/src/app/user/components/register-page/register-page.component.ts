@@ -9,14 +9,13 @@ import { FormGroup, FormControl, FormBuilder, Validators, } from '@angular/forms
 export class RegisterPageComponent {
 @Input() button : boolean = true;
   profileForm = new FormGroup({
-    firstName: new FormControl('', Validators.required),
-    lastName: new FormControl('', Validators.required),
+    username: new FormControl('', Validators.required),
+    password: new FormControl('', Validators.required),
   });
   constructor(private fb: FormBuilder) { }
 
   onSubmit() {
-    console.warn(this.profileForm.value);
-    console.log(this.profileForm);
+    console.log(this.profileForm.value);
     
   }
 

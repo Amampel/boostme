@@ -24,8 +24,8 @@
               "projects/boostme/src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "projects/boostme/src/styles.css"
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css"             
             ],
             "scripts": []
           },
@@ -90,6 +90,8 @@
               "projects/boostme/src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
               "projects/boostme/src/styles.css"
             ],
             "scripts": []
@@ -191,6 +193,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "boostme"
 }

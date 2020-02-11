@@ -13,7 +13,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [UserMainComponent, ProfilePageComponent, CoreComponent,
     CardComponent,
-    RegisterPageComponent],
+    RegisterPageComponent,
+    ],
   imports: [
     CommonModule,
     UserRoutingModule,
