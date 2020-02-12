@@ -1,19 +1,24 @@
 
 <h1 class="display-4">Register User</h1>
 <br>
-<form [formGroup]="profileForm" (ngSubmit)="onSubmit()"> 
-  
-    <label>
-      Username:
-      <input type="text" formControlName="username" class="form-control">
-    </label>
-    <label>
+<div class="displayTable">
+  <div class="displayTableCell">
+<div class="authBlock">
+<div class="formGroup">
+      Email:
+      <input type="email" class=" form-control" placeholder="Email Address" #userEmail required>
+    </div>
+    <br>
+    <div class="formGroup">
       Password:
-      <input type="password" formControlName="password" class="form-control">
-    </label>
+      <input type="password" class="formControl form-control" placeholder="Password" #userPwd required>
+    </div>
 <br>
-    <label>
-        <button type="submit" [disabled]="!profileForm.valid" class="btn btn-outline-primary">Submit</button>
-    </label>
-  
-  </form>
+<div class="formGroup">
+      <input type="button" class="btn btn-outline-primary" value="Sign Up" (click)="authService.SignUp(userEmail.value, userPwd.value)">
+    </div>
+  </div>
+</div>
+</div>
+  <hr>
+
