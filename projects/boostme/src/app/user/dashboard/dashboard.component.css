@@ -1,0 +1,27 @@
+
+#add {
+  width: 200px;
+  height: 150px;
+  border-color: black;
+  margin: auto;
+  margin-top: 50px;
+  cursor: pointer;
+  
+  
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 15%;
+  }
+
+  body{
+      
+  }
+  

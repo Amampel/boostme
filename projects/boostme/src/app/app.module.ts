@@ -10,12 +10,14 @@ import { environment } from '../environments/environment';
 import { AuthService } from './policy.service';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
+import { DashboardComponent } from './user/dashboard/dashboard.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     VerifyEmailComponent,
+    DashboardComponent,
    
   ],
   imports: [

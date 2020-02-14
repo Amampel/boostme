@@ -2,7 +2,6 @@ import { CoreComponent } from 'projects/core/src/public-api';
 import {storiesOf, moduleMetadata} from '@storybook/angular'
 import { CardComponent } from 'projects/core/src/lib/card/card.component';
 import { action } from '@storybook/addon-actions';
-import { CoreModule } from 'core/core';
 
 
 export default {
