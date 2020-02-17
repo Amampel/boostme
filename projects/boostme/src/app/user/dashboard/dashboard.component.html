@@ -3,7 +3,31 @@
 
 <div class="container">
 
-    <div class="shadow p-3 mb-5 bg-white rounded" id="add">
+    <div class="shadow p-3 mb-5 bg-white rounded" id="add" (click)="createDashboard()">
         <img src="https://image.flaticon.com/icons/svg/747/747944.svg" class="center" height="60" width="60">
+    </div>
+  <div [ngStyle]="{'display':display}" class="backdrop" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+ 
+    <div class="modal-content">
+  
+      <div class="modal-header">
+  
+  
+        <h4 class="modal-title">Model Title</h4>
+  
+      </div>
+  
+      <div class="modal-body">
+  
+        <p>Model body text</p>
+  
+      </div>
+  
+      <div class="modal-footer">
+  
+        <button type="button" class="btn btn-outline-primary" (click)="onCloseHandled()" >Close</button>
+  
+      </div>
     </div>
 </div>

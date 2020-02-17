@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgStyle } from '@angular/common';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,10 +8,21 @@ import { Component, OnInit } from '@angular/core';
   
 })
 export class DashboardComponent implements OnInit {
-
+display='none';
   constructor() { }
 
   ngOnInit() {
   }
+
+createDashboard(){
+this.display='block';
+
+}
+
+onCloseHandled(){
+
+  this.display='none';
+
+}
 
 }
