@@ -8,7 +8,7 @@ import { NgStyle } from '@angular/common';
   
 })
 export class DashboardComponent implements OnInit {
-display='none';
+private display='none';
   constructor() { }
 
   ngOnInit() {
