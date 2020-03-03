@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthService } from './policy.service';
 
 @Component({
   selector: 'app-root',
@@ -8,4 +9,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'boostme';
   validator = false;
+  constructor(public authService: AuthService){}
 }

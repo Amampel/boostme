@@ -13,6 +13,8 @@ import { User } from "./user-services";
   providedIn: "root"
 })
 export class AuthService {
+
+  
   userData: any;
 
   constructor(
@@ -45,6 +47,12 @@ export class AuthService {
       .catch(error => {
         window.alert(error.message);
       });
+  }
+
+  async signOut() {
+    return this.afAuth.auth.signOut().then(() => {
+      this.router.navigate(['login']);
+    })
   }
 
   async signUp(email, password) {
@@ -81,6 +89,22 @@ export class AuthService {
     return user !== null && user.emailVerified !== false ? true : false;
   }
 
+  get authenticated(): boolean {
+      if (this.userData == null ) {
+         return false;
+      } else {
+         return true;
+      }
+    }
+  
+    get currentUserId(): string {
+       return this.authenticated ? this.userData.uid : '';
+    }
+  
+    get currentUserDisplayName(): string {
+        return this.userData.displayName || this.userData.email; 
+    }
+
   async googleAuth() {
     return this.authLogin(new auth.GoogleAuthProvider());
   }
@@ -115,10 +139,5 @@ export class AuthService {
     });
   }
 
-  async signOut() {
-    return this.afAuth.auth.signOut().then(() => {
-      localStorage.removeItem("user");
-      this.router.navigate(["sign-in"]);
-    });
-  }
+ 
 }

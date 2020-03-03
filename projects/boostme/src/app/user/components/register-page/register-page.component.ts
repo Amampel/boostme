@@ -18,8 +18,9 @@ export class RegisterPageComponent {
   @Input() button: boolean = true;
   policies: Policy[];
   profileForm = new FormGroup({
-    username: new FormControl("", Validators.required),
-    password: new FormControl("", Validators.required)
+    email: new FormControl("", Validators.required),
+    password: new FormControl("", Validators.required),
+    username: new FormControl("", Validators.required)
   });
   constructor(private fb: FormBuilder, public authService: AuthService) {}
 

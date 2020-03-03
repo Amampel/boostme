@@ -10,12 +10,17 @@
     </div>
     <br>
     <div class="formGroup">
+      Username:
+      <input type="username" class=" form-control" placeholder="Username" #userName required>
+    </div>
+    <br>
+    <div class="formGroup">
       Password:
       <input type="password" class="formControl form-control" placeholder="Password" #userPwd required>
     </div>
 <br>
 <div class="formGroup">
-      <input type="button" class="btn btn-outline-primary" value="Sign Up" (click)="authService.signUp(userEmail.value, userPwd.value)">
+      <input type="button" class="btn btn-outline-primary" value="Sign Up" (click)="authService.signUp(userEmail.value, userPwd.value, userName.value)">
     </div>
   </div>
 </div>

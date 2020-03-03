@@ -1,16 +1,18 @@
-import { Component, OnInit } from "@angular/core";
-import { NgStyle } from "@angular/common";
+import { Component } from "@angular/core";
 import { EventEmitter } from "events";
+import { FormBuilder } from '@angular/forms';
+import { AuthService } from '../../policy.service';
+import { User } from '../../user-services';
 
 @Component({
   selector: "app-dashboard",
   templateUrl: "./dashboard.component.html",
   styleUrls: ["./dashboard.component.css"]
 })
-export class DashboardComponent implements OnInit {
+export class DashboardComponent {
   private display = "none";
   private dashboards = [];
-  constructor() {}
+  constructor(private fb: FormBuilder, public authService: AuthService) {}
 
   ngOnInit() {}
 
