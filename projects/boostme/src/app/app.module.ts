@@ -11,6 +11,7 @@ import { AuthService } from './policy.service';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 import { DashboardComponent } from './user/dashboard/dashboard.component';
+import { LoginComponent } from './user/login/login.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { DashboardComponent } from './user/dashboard/dashboard.component';
     AppComponent,
     VerifyEmailComponent,
     DashboardComponent,
+    LoginComponent
    
   ],
   imports: [

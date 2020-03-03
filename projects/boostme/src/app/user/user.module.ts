@@ -8,6 +8,7 @@ import { CardComponent } from 'projects/core/src/lib/card/card.component';
 import { RegisterPageComponent } from './components/register-page/register-page.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CoreComponent } from 'projects/core/src/lib/core.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
